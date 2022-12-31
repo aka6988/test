@@ -32,7 +32,7 @@ jobs:
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Creating Tunnel...
-      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region in 3389"'
+      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region jp 3389"'
     - name: Connect To Your ho
       run: cmd /c start.bat
     - name: RDP Started Successfully! Now you can close the tab.
